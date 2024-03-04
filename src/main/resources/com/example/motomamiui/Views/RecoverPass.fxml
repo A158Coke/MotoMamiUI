@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="446.0" prefWidth="336.0" spacing="20.0" style="-fx-background-color: mistyrose;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.motomamiui.Controllers.RecoverPassController">
+   <children>
+      <HBox>
+         <Button text="Back" onAction="#goBackToLoginPage" />
+      </HBox>
+      <Label maxWidth="Infinity" text="Email" />
+      <TextField fx:id="userEmail" maxWidth="Infinity" promptText="Introduce tu Email" />
+      <Label maxWidth="Infinity" text="New Password" />
+      <PasswordField fx:id="newPass" maxWidth="Infinity" promptText="Nueva contraseña" />
+      <Label maxWidth="Infinity" text="Confirm New Password" />
+      <PasswordField fx:id="confirmNewPass" maxWidth="Infinity" promptText="Confirma la nueva contraseña" />
+      <Button fx:id="submit" maxWidth="Infinity" onAction="#recoverPassAction" text="Recover" />
+   </children>
+   <padding>
+      <Insets bottom="20" left="20" right="20" top="20" />
+   </padding>
+</VBox>

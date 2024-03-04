@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="439.0" prefWidth="600.0" style="-fx-background-color: mistyrose;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.motomamiui.Controllers.UserDashboardController">
+
+    <!-- 标题 -->
+    <Label layoutX="170.0" layoutY="18.0" style="-fx-font-size: 24px;" text="Menú del Usuario" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="18.0" />
+
+    <!-- 用户资料按钮 -->
+    <Button fx:id="btnUserProfile" maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" text="Perfil de Usuario" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10" onAction="#goToPerfil" />
+
+    <!-- 按钮网格 -->
+    <GridPane hgap="10" vgap="10" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="80">
+        <Button fx:id="btnVerSeguro" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" onAction="#handleVerSeguro" text="Ver Información del Seguro" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button fx:id="btnRenovarSeguro" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" onAction="#handleRenovarSeguro" text="Renovar Seguro" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button fx:id="btnVerInformes" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" onAction="#handleVerInformes" text="Ver Informes de Accidentes" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button fx:id="btnCrearInforme" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" onAction="#handleCrearInforme" text="Crear Informe de Accidente" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="btnVerFacturas" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" onAction="#handleVerFacturas" text="Ver Historial de Facturas" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button fx:id="btnCerrarSesion" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" onAction="#handleCerrarSesion" text="Cerrar Sesión" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+</AnchorPane>

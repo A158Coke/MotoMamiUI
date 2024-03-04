@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.motomamiui.Controllers.FacturaController">
+    <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#returnButtonClicked" text="Volver" />
+    <TableView fx:id="tableView" layoutX="40.0" layoutY="60.0" prefHeight="320.0" prefWidth="720.0">
+        <columns>
+
+        </columns>
+    </TableView>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.motomamiui.Controllers.UserPerfilController" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: mistyrose;">
+    <children>
+        <VBox alignment="CENTER" prefWidth="600.0" spacing="20">
+            <Label text="Perfil del Usuario" style="-fx-font-size: 20px;"/>
+            <GridPane vgap="10" hgap="15">
+                <Label text="Nombre:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtNombre" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label text="Apellidos:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtApellidos" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <Label text="Fecha de Nacimiento:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <DatePicker fx:id="dpFechaNacimiento" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <Label text="Dirección:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtDireccion" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                <Label text="Teléfono:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtTelefono" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                <Label text="Número de Carnet o DNI:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtCarnetDNI" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+                <Label text="Correo Electrónico:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtEmail" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+                <Label text="Tipo de Vehículo:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtTipoVehiculo" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+                <Label text="Matrícula:" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtMatricula" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+                <Label text="Marca:" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtMarca" GridPane.rowIndex="9" GridPane.columnIndex="1"/>
+                <Label text="Modelo del Vehículo:" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtModelo" GridPane.rowIndex="10" GridPane.columnIndex="1"/>
+                <Label text="Contraseña:" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+                <PasswordField fx:id="txtPassword" GridPane.rowIndex="11" GridPane.columnIndex="1"/>
+            </GridPane>
+            <Button text="Guardar Cambios" fx:id="btnGuardarCambios" onAction="#handleGuardarCambios"/>
+        </VBox>
+        <Button alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Volver" onAction="#handleReturnButton"/>
+    </children>
+</AnchorPane>

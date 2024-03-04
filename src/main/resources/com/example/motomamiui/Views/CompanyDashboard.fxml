@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: mistyrose;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.motomamiui.Controllers.CompanyDashboardController">
+    <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <Tab text="Búsqueda de Usuario">
+            <AnchorPane prefHeight="600.0" prefWidth="800.0">
+                <VBox spacing="10" alignment="TOP_CENTER" layoutX="20" layoutY="20">
+                    <TextField fx:id="txtSearch" prefWidth="200" promptText="Buscar por apellido o DNI"/>
+                    <Button fx:id="btnSearch" onAction="#handleSearch" text="Buscar"/>
+                    <TableView fx:id="userTable" VBox.vgrow="ALWAYS">
+                        <columns>
+                            <TableColumn fx:id="columnUserID" text="UserID"/>
+                            <TableColumn fx:id="columnFirstName" text="FirstName"/>
+                            <TableColumn fx:id="columnLastName" text="LastName"/>
+                            <TableColumn fx:id="columnDateOfBirth" text="DateOfBirth"/>
+                            <TableColumn fx:id="columnAddress" text="Address"/>
+                            <TableColumn fx:id="columnPhone" text="Phone"/>
+                            <TableColumn fx:id="columnLicenseOrID" text="LicenseOrID"/>
+                            <TableColumn fx:id="columnLicenseType" text="LicenseType"/>
+                            <TableColumn fx:id="columnEmail" text="Email"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </AnchorPane>
+        </Tab>
+        <!-- Más Tabs para otras funcionalidades -->
+        <Tab text="Otra Funcionalidad">
+            <!-- Contenido para otra funcionalidad -->
+        </Tab>
+    </TabPane>
+</AnchorPane>

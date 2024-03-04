@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.motomamiui.Controllers.AccidentReportController">
+        <GridPane hgap="10.0" vgap="10.0" alignment="CENTER" layoutX="50" layoutY="50">
+                <Button text="Volver al Menú" onAction="#handleBackToMenu" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+                <Label text="Fecha:" GridPane.rowIndex="1" />
+                <DatePicker fx:id="datePicker" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Descripción:" GridPane.rowIndex="2" />
+                <TextField fx:id="descriptionField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Daños:" GridPane.rowIndex="3" />
+                <HBox spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <CheckBox fx:id="damageFrontCheck" text="Frontal" />
+                        <CheckBox fx:id="damageSideCheck" text="Lateral" />
+                        <CheckBox fx:id="damageRearCheck" text="Trasero" />
+                </HBox>
+
+                <Button text="Generar Parte" onAction="#handleGenerateReport" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        </GridPane>
+</AnchorPane>
